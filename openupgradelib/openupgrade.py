@@ -538,7 +538,7 @@ def delete_model_workflow(cr, model):
     logged_query(
         cr,
         "DELETE FROM wkf_instance WHERE "
-        "res_type = %s " (model,))
+        "res_type = %s ", (model,))
     logged_query(
         cr,
         "DELETE FROM wkf WHERE osv = %s", (model,))
