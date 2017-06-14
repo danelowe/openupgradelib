@@ -1,5 +1,4 @@
-
-import ROOT.logging as logging
+import logging
 import sys
 from pythonjsonlogger import jsonlogger
 
