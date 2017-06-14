@@ -14,4 +14,5 @@ handler = logging.StreamHandler(sys.stdout)
 formatter = StackDriverJsonFormatter()
 handler.setFormatter(formatter)
 root_logger = logging.getLogger()
+root_logger.handlers = []
 root_logger.addHandler(handler)
